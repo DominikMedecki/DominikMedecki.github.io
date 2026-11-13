@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bravestone Build</title>
+  <meta name="description" content="Bravestone Build: complete building and renovation services in the UK.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="0 0 100 120"><path fill="currentColor" d="M2 118V46l28-18v90H20V54l-8 5v59ZM40 118V22L70 2v48l24-12v80H84V56L70 63v55H60V34l-10 6v78Z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6.5L20.5 7"/></g></symbol>
+</svg>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-row">
+    <a class="brand" href="#home" data-nav aria-label="Bravestone Build home">
+      <svg aria-hidden="true"><use href="#mark"/></svg>
+      <span class="brand-text"><span class="brand-name">BRAVESTONE</span><span class="brand-sub">BUILD</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="siteNav" aria-label="Main">
+      <ul>
+        <li><a class="link active" href="#home" data-nav data-target="home">Home</a></li>
+        <li><a class="link" href="#about" data-nav data-target="about">About</a></li>
+        <li><a class="link" href="#services" data-nav data-target="services">Services</a></li>
+        <li><a class="link" href="#work" data-nav data-target="work">Our Work</a></li>
+        <li><a class="link" href="#why" data-nav data-why data-target="why">Why Us</a></li>
+        <li><a class="link" href="#contact" data-nav data-target="contact">Contact</a></li>
+      </ul>
+      <button class="btn btn-outline-gold btn-sm only-mobile" data-quote>Get a Free Quote</button>
+    </nav>
+    <button class="btn btn-outline-gold btn-sm" data-quote>Get a Free Quote</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-media" role="img" aria-label="Modern timber and stone home lit at dusk"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Quality construction. Lasting value.</p>
+        <h1>Complete Building &amp; Renovation Services <em>in the UK</em></h1>
+        <p>From concept to completion, we deliver high-quality building and renovation solutions tailored to your needs. Your vision. Our expertise.</p>
+        <div class="btn-row">
+          <button class="btn btn-gold" data-quote>Get a Free Quote</button>
+          <a class="btn btn-ghost" href="#work" data-nav>View Our Projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-label="Services">
+    <div class="wrap svc-grid">
+      <button class="svc" data-quote data-type="Home extension">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 23 24 8l18 15M10 20v21h28V20"/><path d="M19 41V29h10v12"/></svg>
+        <h3>Home Extensions</h3>
+        <p>More space. More possibilities.</p>
+      </button>
+      <button class="svc" data-quote data-type="Renovation">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g transform="rotate(45 24 24)"><rect x="11" y="5" width="26" height="10" rx="1.500"/><path d="M21 15v28h6V15"/></g></svg>
+        <h3>Renovations</h3>
+        <p>Breathe new life into your property.</p>
+      </button>
+      <button class="svc" data-quote data-type="New build">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="10" width="36" height="28" rx="1"/><path d="M6 19.3h36M6 28.7h36M20 10v9.3M32 19.3v9.4M14 28.7V38M26 28.7V38"/></svg>
+        <h3>New Builds</h3>
+        <p>Quality construction from the ground up.</p>
+      </button>
+      <button class="svc" data-quote data-type="Interior & exterior">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 6a9 9 0 0 0-8 12L7 33a4.2 4.2 0 0 0 6 6l15-15A9 9 0 0 0 40 16l-6 6-5-1-1-5 6-6a9 9 0 0 0-4-4Z" transform="translate(0 1)"/></svg>
+        <h3>Interior &amp; Exterior</h3>
+        <p>Beautiful finishes. Built to last.</p>
+      </button>
+    </div>
+  </section>
+
+  <section class="about band-dark" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <p class="eyebrow">About Bravestone Build</p>
+        <h2>Building Better Spaces for a Brighter Future</h2>
+        <p>We are a dedicated construction and renovation company based in the UK, specialising in high-quality residential projects. Our focus is on craftsmanship, reliability and delivering results that exceed expectations.</p>
+        <ul class="why" id="why" hidden>
+          <li>Clear, itemised quotes before any work starts.</li>
+          <li>One named project manager from first visit to handover.</li>
+          <li>Tidy sites and regular progress updates.</li>
+          <li>Workmanship you can inspect at every stage.</li>
+        </ul>
+        <button class="btn btn-gold btn-sm" id="learnMore" aria-expanded="false" aria-controls="why">Learn More</button>
+      </div>
+      <div class="about-media">
+        <img src="images/about.jpg" alt="Dark-fronted kitchen with a marble island and glazed doors to the garden" width="736" height="408">
+        <div class="badge">Trust<br>Quality<br>Experience</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="work">
+    <div class="wrap">
+      <div class="projects-head">
+        <div>
+          <p class="eyebrow">Our recent projects</p>
+          <h2>Featured Projects</h2>
+        </div>
+        <button class="link-arrow" id="viewAll">View All Projects <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="p-grid" id="pGrid">
+        <button class="p-card" data-title="Full Home Renovation" data-loc="Surrey, UK"><div class="ph"><img src="images/project-1.jpg" alt="Renovated kitchen with dark cabinetry" loading="lazy"></div><strong>Full Home Renovation</strong><span class="loc">Surrey, UK</span></button>
+        <button class="p-card" data-title="House Extension" data-loc="Kent, UK"><div class="ph"><img src="images/project-2.jpg" alt="Extended house with glazed rear elevation" loading="lazy"></div><strong>House Extension</strong><span class="loc">Kent, UK</span></button>
+        <button class="p-card" data-title="Bathroom Renovation" data-loc="London, UK"><div class="ph"><img src="images/project-3.jpg" alt="Bathroom with freestanding bath" loading="lazy"></div><strong>Bathroom Renovation</strong><span class="loc">London, UK</span></button>
+        <button class="p-card" data-title="Interior Refurbishment" data-loc="Essex, UK"><div class="ph"><img src="images/project-4.jpg" alt="Refurbished open-plan living room" loading="lazy"></div><strong>Interior Refurbishment</strong><span class="loc">Essex, UK</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta band-dark" id="contact">
+    <div class="cta-media" aria-hidden="true"></div>
+    <div class="wrap cta-grid">
+      <div>
+        <p class="eyebrow" style="margin-bottom:12px"></p>
+        <h2>Let's Build Your Vision</h2>
+        <p>Get in touch for a free, no-obligation quote. We're here to help with your next project.</p>
+      </div>
+      <div class="cta-rule" aria-hidden="true"></div>
+      <div>
+        <button class="btn btn-gold" data-quote>Get a Free Quote</button>
+        <ul class="contact-list">
+          <li><svg aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+447700123456">+44 7700 123 456</a><button class="copy" data-copy="+44 7700 123 456">Copy</button></li>
+          <li><svg aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@bravestonebuild.co.uk">info@bravestonebuild.co.uk</a><button class="copy" data-copy="info@bravestonebuild.co.uk">Copy</button></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer band-dark">
+  <div class="wrap">
+    <div class="foot-row">
+      <a class="brand" href="#home" data-nav aria-label="Back to top">
+        <svg aria-hidden="true"><use href="#mark"/></svg>
+        <span class="brand-text"><span class="brand-name">BRAVESTONE</span><span class="brand-sub">BUILD</span></span>
+      </a>
+      <ul class="foot-nav">
+        <li><a href="#home" data-nav>Home</a></li>
+        <li><a href="#about" data-nav>About</a></li>
+        <li><a href="#services" data-nav>Services</a></li>
+        <li><a href="#work" data-nav>Our Work</a></li>
+        <li><a href="#contact" data-nav>Contact</a></li>
+      </ul>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3h-3V8.900c0-.9.3-1.500 1.500-1.500h1.600V4.700C16.300 4.600 15.500 4.500 14.600 4.500c-2.200 0-3.600 1.300-3.600 3.700v2.300H8.500v3H11V21z"/></svg></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4.500"/><circle cx="12" cy="12" r="3.700"/><circle cx="16.800" cy="7.200" r=".6" fill="currentColor"/></svg></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 9.500h3V19H5ZM6.500 5a1.700 1.700 0 1 1 0 3.400 1.700 1.700 0 0 1 0-3.400ZM10.300 9.500h2.900v1.300c.4-.8 1.400-1.500 2.900-1.500 3 0 3.600 2 3.600 4.600V19h-3v-4.500c0-1.100 0-2.500-1.500-2.500s-1.800 1.200-1.800 2.400V19h-3Z"/></svg></a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Bravestone Build. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Quote modal -->
+<div class="overlay" id="quoteOverlay" role="dialog" aria-modal="true" aria-labelledby="quoteTitle">
+  <div class="modal">
+    <button class="x" data-close aria-label="Close">×</button>
+    <form id="quoteForm" novalidate>
+      <h2 id="quoteTitle">Get a Free Quote</h2>
+      <p class="sub">Tell us about your project. It takes a minute and carries no obligation.</p>
+      <div class="field"><label for="qName">Name</label><input id="qName" name="name" autocomplete="name" aria-describedby="qNameE"><div class="err" id="qNameE"></div></div>
+      <div class="row2">
+        <div class="field"><label for="qEmail">Email</label><input id="qEmail" name="email" type="email" autocomplete="email" aria-describedby="qEmailE"><div class="err" id="qEmailE"></div></div>
+        <div class="field"><label for="qPhone">Phone (optional)</label><input id="qPhone" name="phone" type="tel" autocomplete="tel" aria-describedby="qPhoneE"><div class="err" id="qPhoneE"></div></div>
+      </div>
+      <div class="field"><label for="qType">Project type</label>
+        <select id="qType" name="type" aria-describedby="qTypeE">
+          <option value="">Choose one</option>
+          <option>Home extension</option>
+          <option>Renovation</option>
+          <option>New build</option>
+          <option>Interior &amp; exterior</option>
+          <option>Something else</option>
+        </select><div class="err" id="qTypeE"></div></div>
+      <div class="field"><label for="qMsg">About your project</label><textarea id="qMsg" name="message" placeholder="Location, size, timescale, budget range"></textarea></div>
+      <button class="btn btn-gold" type="submit">Request My Free Quote</button>
+    </form>
+    <div class="done" id="quoteDone" hidden>
+      <h2>Thank you, <span id="doneName"></span>.</h2>
+      <p class="sub" id="doneText"></p>
+      <button class="btn btn-gold" data-close>Close</button>
+      <p class="note">This page has no mail server connected, so nothing was sent. To reach us now, use the phone number or email in the contact section.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Project viewer -->
+<div class="overlay lb" id="lbOverlay" role="dialog" aria-modal="true" aria-label="Project gallery">
+  <button class="x" data-close aria-label="Close">×</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption>
+      <div><span id="lbTitle"></span><small id="lbMeta"></small></div>
+      <div class="lb-nav"><button class="lb-btn" id="lbPrev" aria-label="Previous project">←</button><button class="lb-btn" id="lbNext" aria-label="Next project">→</button></div>
+    </figcaption>
+  </figure>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
